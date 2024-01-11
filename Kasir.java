@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Kasir {
     public static void main(String[] args) {
-        double bukuTulis, pensil, penghapus, penggaris;
+    Scanner input = new Scanner(System.in);
+
+    double bukuTulis, pensil, penghapus, penggaris;
         bukuTulis=2500;
         pensil=1000;
         penghapus=1500;
         penggaris=1000;
-        
-        Scanner input = new Scanner(system.in);
         
         System.out.println( "Masukkan Jumlah beli Buku Tulis: ");
         double jumlahBuku= input.nextDouble();
@@ -16,7 +16,7 @@ public class Kasir {
         
         System.out.println( "Masukkan Jumlah Pensil: ");
         double jumlahPensil= input.nextDouble();
-        total += jumlahPensil*pensil;
+        total +=jumlahPensil*pensil;
         
         System.out.println( "Masukkan Jumlah Penggaris: ");
         double jumlahPenggaris= input.nextDouble();
